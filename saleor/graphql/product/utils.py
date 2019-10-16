@@ -49,7 +49,7 @@ def validate_attribute_input_for_variant(instance: models.Attribute, values: Lis
         )
 
 
-def get_used_attribute_values(product):
+def get_used_variants_attribute_values(product):
     variants = product.variants.all()
     used_attribute_values = []
     for variant in variants:
