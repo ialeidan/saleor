@@ -97,17 +97,6 @@
                   {% trans "Log out" context "Main navigation item" %}</a>
               </li>
               {% endif %}
-              {% else %}
-              <li>
-                <a rel="nofollow" href="{% url "account:signup" %}">
-                  {% trans "Register" context "Main navigation item" %}</a>
-              </li>
-              <li>
-                <a rel="nofollow" href="{% url "account:login" %}">
-                  {% trans "Log in" context "Main navigation item" %}
-                </a>
-              </li>
-              {% endif %}
             </ul>
           </div>
         </div>
@@ -172,6 +161,7 @@
       <div class="container">
         <div class="row">
           {% footer_menu site_menu=site.settings.bottom_menu %}
+          {% if user.is_authenticated %}
           <div class="col-md-2 col-6">
             <ul class="menu">
               <li class="nav-item__dropdown menu__item">
@@ -211,20 +201,9 @@
                   {% trans "Log out" context "Main navigation item" %}</a>
               </li>
               {% endif %}
-              {% else %}
-              <li>
-                <a rel="nofollow" href="{% url "account:signup" %}">
-                  {% trans "Register" context "Main navigation item" %}
-                </a>
-              </li>
-              <li>
-                <a rel="nofollow" href="{% url "account:login" %}">
-                  {% trans "Log in" context "Main navigation item" %}
-                </a>
-              </li>
-              {% endif %}
             </ul>
           </div>
+          {% endif %}
           <div class="offset-md-2 col-md-4 col-12">
             <div class="footer__menus__social-container">
               <div class="footer__menus__social">
