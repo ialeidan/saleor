@@ -175,22 +175,6 @@ export default observer(
               selected={selection[attribute.pk]}
             />
           ))}
-          <div className="clearfix">
-            <QuantityInput
-              errors={errors.quantity}
-              handleChange={this.handleQuantityChange}
-              quantity={quantity}
-            />
-            <div className="form-group product__info__button">
-              <button
-                className={addToCheckoutBtnClasses}
-                onClick={this.handleAddToCheckout}
-                disabled={disableAddToCheckout}
-              >
-                {pgettext("Product details primary action", "Add to cart")}
-              </button>
-            </div>
-          </div>
         </div>
       );
     }
