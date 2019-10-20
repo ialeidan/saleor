@@ -1,7 +1,6 @@
 /*** GLOBAL ***/
 
 $roboto-font-path: "~materialize-css/dist/fonts/roboto/";
-
 $header-height: 56px;
 $navbar-height: 56px;
 $navbar-height-mobile: 64px;
@@ -12,8 +11,8 @@ $transition-duration: .2s;
 /*** COLORS ***/
 
 $off-black: rgba(0, 0, 0, 0.87);
-$primary-color: #2bb673;
-$secondary-color: #26A5D4;
+$primary-color: #A59453;
+$secondary-color: #374856;
 $success-color: #4CAF50;
 $error-color: #F44336;
 $link-color: #039BE5;
@@ -53,6 +52,7 @@ $timeline-event-margin: 1rem !default;
 $timeline-date-width: 20rem;
 
 /*** Medium Editor ***/
+
 $medium-editor-bgcolor: $off-black;
 $medium-editor-button-size: 40px;
 $medium-editor-button-active-text-color: #fff;
